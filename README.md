@@ -1,6 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+
+This project creates a chrome extension which allows for sample data population into lists. The extension can be viewed on the [chrome web store](https://chrome.google.com/webstore/detail/sharepoint-population-too/eaoeogggkmgpmbigihinlmjhefpeaefa?hl=en&authuser=0).
 
 ## Development Testing
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### Getting up and running in Chrome
 
