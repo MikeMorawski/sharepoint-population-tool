@@ -1,0 +1,54 @@
+{
+  "name": "popup",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@blueprintjs/core": "^3.28.1",
+    "@blueprintjs/docs-theme": "^3.6.0",
+    "@craco/craco": "^5.6.4",
+    "@pnp/sp": "^2.0.8",
+    "@types/lodash": "^4.14.154",
+    "axios": "^0.20.0",
+    "date-fns": "^2.14.0",
+    "lodash": "^4.17.15",
+    "random-words": "^1.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "watch:build": "cra-build-watch -v --build-path ../../dist/popup --disable-chunks"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.37",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/pure-render-decorator": "^0.2.28",
+    "@types/react-addons-css-transition-group": "^15.0.5",
+    "@types/sharepoint": "^2016.1.8"
+  }
+}

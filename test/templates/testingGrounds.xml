@@ -1,0 +1,1193 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.25.2009.1, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-3C046C7F74F5454E8D07D09AFB5CE5BC">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-3C046C7F74F5454E8D07D09AFB5CE5BC" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field Type="Note" DisplayName="test_ManagedMultiBadChar_0" StaticName="j87ac4cb7e6f47378fbe196223a678e9" Name="j87ac4cb7e6f47378fbe196223a678e9" ID="{d6e3f9f5-8cfd-477f-b17f-bbf63fbaf228}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" />
+        <Field Type="Note" DisplayName="test_ManagedSingle_0" StaticName="k2bbecab34fa4497b1b1edef8799ef00" Name="k2bbecab34fa4497b1b1edef8799ef00" ID="{cdeacf43-2827-4909-8842-a46e9a0b2766}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" />
+        <Field Type="Note" DisplayName="test_ManagedEmptyRequired_0" StaticName="gfa1479e27d7448c85ee475e755d18ae" Name="gfa1479e27d7448c85ee475e755d18ae" ID="{ea045ddc-5744-41e6-8a8d-3722c27dbd84}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" />
+        <Field Type="Note" DisplayName="test_ManagedSingleEmpty_0" StaticName="aea0b64176b44e8eb73798e5e27addcd" Name="aea0b64176b44e8eb73798e5e27addcd" ID="{645428a8-3755-40c3-b4d3-a3482376abda}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" />
+        <Field Type="Note" DisplayName="test_ManagedSingleSubSet_0" StaticName="n2d9aa18f59b453ea1a3cbf22dff7eaf" Name="n2d9aa18f59b453ea1a3cbf22dff7eaf" ID="{15d9c48f-af26-4779-a42b-d47e41845a78}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" />
+        <Field Type="UserMulti" DisplayName="test_PersonMulti" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Mult="TRUE" Sortable="FALSE" Group="Custom Columns" ID="{4eaed503-ae87-40d6-903a-568da0f588e0}" SourceID="{{siteid}}" StaticName="test_PersonMulti" Name="test_PersonMulti" />
+        <Field Type="Number" DisplayName="test_Number" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="Custom Columns" ID="{9ba0a405-d8d2-4bc5-a309-5a1ab14c12f8}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_Number" Name="test_Number">
+        </Field>
+        <Field Type="Number" DisplayName="test_NumberMinMax" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Min="5000" Max="5010" Group="Custom Columns" ID="{ee813f07-fade-4b1d-aeaf-2b14c5a2190f}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_NumberMinMax" Name="test_NumberMinMax">
+        </Field>
+        <Field Type="HTML" DisplayName="test_FullHTML" RichText="TRUE" RichTextMode="ThemeHtml" Required="FALSE" Group="Custom Columns" ID="{f6d3dc0b-3421-4df8-908a-1f26ceb7e5d9}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_FullHTML" Name="test_FullHTML" />
+        <Field Type="Note" DisplayName="test_MultipleLinesOfTextRich" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" Group="Custom Columns" ID="{bc83b20c-ac7e-4874-bd4f-5081c96ae78e}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_MultipleLinesOfTextRich" Name="test_MultipleLinesOfTextRich">
+        </Field>
+        <Field Type="TaxonomyFieldType" DisplayName="test_ManagedSingleSubSet" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="Custom Columns" ID="{72d9aa18-f59b-453e-a1a3-cbf22dff7eaf}" SourceID="{{siteid}}" StaticName="test_ManagedSingleSubSet" Name="test_ManagedSingleSubSet">
+          <Default>
+          </Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:ListPopulator:TermSet A}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">72730d53-6bc4-4d88-939c-86a882a8973d</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{15d9c48f-af26-4779-a42b-d47e41845a78}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="LookupMulti" DisplayName="test_LookupIdMulti" Required="FALSE" EnforceUniqueValues="FALSE" List="{{listid:test_LookupTargetList}}" WebId="{siteid}" ShowField="ID" Mult="TRUE" Sortable="FALSE" UnlimitedLengthInDocumentLibrary="FALSE" Group="Custom Columns" ID="{152b2f20-cf49-4ee4-bac2-3cfb0568b5b4}" SourceID="{{siteid}}" StaticName="test_LookupIdMulti" Name="test_LookupIdMulti" />
+        <Field Type="TaxonomyFieldType" DisplayName="test_ManagedSingleEmpty" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="Custom Columns" ID="{aea0b641-76b4-4e8e-b737-98e5e27addcd}" SourceID="{{siteid}}" StaticName="test_ManagedSingleEmpty" Name="test_ManagedSingleEmpty">
+          <Default>
+          </Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:ListPopulator:TermSet Empty}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{645428a8-3755-40c3-b4d3-a3482376abda}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="Number" DisplayName="test_Number5DecimalPlace" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Decimals="5" Group="Custom Columns" ID="{36f7f848-e5b6-4856-8954-93a7ad3270ee}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_Number5DecimalPlace" Name="test_Number5DecimalPlace">
+        </Field>
+        <Field Type="Lookup" DisplayName="test_LookupTitleSingle" Required="FALSE" EnforceUniqueValues="FALSE" List="{{listid:test_LookupTargetList}}" WebId="{siteid}" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" Group="Custom Columns" ID="{787a5251-265c-4d6b-b896-790d2c91cec8}" SourceID="{{siteid}}" StaticName="test_LookupTitleSingle" Name="test_LookupTitleSingle" />
+        <Field Type="MultiChoice" DisplayName="test_ChoiceMulti" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" FillInChoice="FALSE" Group="Custom Columns" ID="{7970295b-efdf-4569-a0e2-138cd6fb8499}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_ChoiceMulti" Name="test_ChoiceMulti">
+          <Default>Enter Choice #1</Default>
+          <CHOICES>
+            <CHOICE>Enter Choice #1</CHOICE>
+            <CHOICE>Enter Choice #2</CHOICE>
+            <CHOICE>Enter Choice #3</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Note" DisplayName="test_MultipleLinesOfTextPlain" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE" Group="Custom Columns" ID="{fc358572-15a3-4d3d-8054-6e610c03294a}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_MultipleLinesOfTextPlain" Name="test_MultipleLinesOfTextPlain">
+        </Field>
+        <Field Type="User" DisplayName="test_PersonMembersGroupSingle" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="5" Group="Custom Columns" ID="{ddfdbc82-b618-4c84-b56c-ab4313ad530c}" SourceID="{{siteid}}" StaticName="test_PersonMembersGroupSingle" Name="test_PersonMembersGroupSingle" />
+        <Field Type="Text" DisplayName="test_SingleLineOfText" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Custom Columns" ID="{e64c2890-098d-4e38-b39f-dccb1589f42b}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_SingleLineOfText" Name="test_SingleLineOfText">
+        </Field>
+        <Field Type="User" DisplayName="test_PersonOrGroupSingle" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleAndGroups" UserSelectionScope="0" Group="Custom Columns" ID="{e9d65197-88c4-4737-9bc7-07fa4b1fbf95}" SourceID="{{siteid}}" StaticName="test_PersonOrGroupSingle" Name="test_PersonOrGroupSingle" />
+        <Field Type="DateTime" DisplayName="test_DateAndTime" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" Group="Custom Columns" FriendlyDisplayFormat="Disabled" ID="{279a0798-0633-4860-891d-f96d895d8334}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_DateAndTime" Name="test_DateAndTime">
+        </Field>
+        <Field Type="SummaryLinks" DisplayName="test_SummaryLinksData" RichText="TRUE" RichTextMode="FullHtml" Required="FALSE" Group="Custom Columns" ID="{88c7d49a-5a9d-48f2-a065-f36b3594e876}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_SummaryLinksData" Name="test_SummaryLinksData" />
+        <Field Type="TaxonomyFieldType" DisplayName="test_ManagedEmptyRequired" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="TRUE" EnforceUniqueValues="FALSE" Group="Custom Columns" ID="{0fa1479e-27d7-448c-85ee-475e755d18ae}" SourceID="{{siteid}}" StaticName="test_ManagedEmptyRequired" Name="test_ManagedEmptyRequired">
+          <Default>
+          </Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:ListPopulator:TermSet Empty}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{ea045ddc-5744-41e6-8a8d-3722c27dbd84}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="Currency" DisplayName="test_Currency" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" LCID="1033" Group="Custom Columns" ID="{c6115ba0-70f2-4396-9adb-775f970f6871}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_Currency" Name="test_Currency">
+        </Field>
+        <Field Type="TaxonomyFieldType" DisplayName="test_ManagedSingle" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="Custom Columns" ID="{42bbecab-34fa-4497-b1b1-edef8799ef00}" SourceID="{{siteid}}" StaticName="test_ManagedSingle" Name="test_ManagedSingle">
+          <Default>
+          </Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:ListPopulator:TermSet A}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{cdeacf43-2827-4909-8842-a46e9a0b2766}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="OutcomeChoice" DisplayName="test_TaskOutcome" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="Custom Columns" ID="{34d95bb3-387d-4bb4-8170-b13c7ddc2e72}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_TaskOutcome" Name="test_TaskOutcome">
+          <Default>Enter Choice #1</Default>
+          <CHOICES>
+            <CHOICE>Enter Choice #1</CHOICE>
+            <CHOICE>Enter Choice #2</CHOICE>
+            <CHOICE>Enter Choice #3</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Boolean" DisplayName="test_YesNo" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="Custom Columns" ID="{1cd988b6-4deb-4310-bae6-78eee1673db8}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_YesNo" Name="test_YesNo">
+          <Default>1</Default>
+        </Field>
+        <Field Type="DateTime" DisplayName="test_DateOnly" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="Custom Columns" FriendlyDisplayFormat="Disabled" ID="{5f1fadbd-4abf-4636-a6b7-c7d5018ea917}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_DateOnly" Name="test_DateOnly">
+        </Field>
+        <Field Type="Image" DisplayName="test_ImageWithFormatting" RichText="TRUE" RichTextMode="ThemeHtml" Required="FALSE" Group="Custom Columns" ID="{ae0464c2-f1ff-400a-a410-3ba61a192021}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_ImageWithFormatting" Name="test_ImageWithFormatting" />
+        <Field Type="TaxonomyFieldType" DisplayName="test_ManagedMultiBadChar" List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033" Required="FALSE" EnforceUniqueValues="FALSE" Group="Custom Columns" ID="{387ac4cb-7e6f-4737-8fbe-196223a678e9}" SourceID="{{siteid}}" StaticName="test_ManagedMultiBadChar" Name="test_ManagedMultiBadChar">
+          <Default>
+          </Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:ListPopulator:TermSet ~!@#$%^＆*()_+]\['＂/.,}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{d6e3f9f5-8cfd-477f-b17f-bbf63fbaf228}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field DisplayName="MikeSiteColumnGallery" Type="Text" Required="FALSE" ID="{560f32ce-6a64-4aa0-b0b8-a0512456d92b}" SourceID="{b25c911e-e2cc-46a0-bfb0-0fd33386fae1}" StaticName="MikeSiteColumnGallery" Name="MikeSiteColumnGallery" Group="Custom Columns" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255">
+          <Default>
+          </Default>
+        </Field>
+        <Field Type="MediaFieldType" DisplayName="test_RichMediaData" RichText="TRUE" RichTextMode="FullHtml" Required="FALSE" Group="Custom Columns" ID="{22c2eed7-6926-42b5-ba98-b6767cd85551}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_RichMediaData" Name="test_RichMediaData" />
+        <Field Type="Currency" DisplayName="test_CurrencyMinMax" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Min="5000" Max="9000" Decimals="2" LCID="1033" Group="Custom Columns" ID="{86070ddc-2333-4384-bd1a-228a3ee300b1}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_CurrencyMinMax" Name="test_CurrencyMinMax">
+        </Field>
+        <Field Type="Link" DisplayName="test_HyperlinkWithFormatting" RichText="TRUE" RichTextMode="ThemeHtml" Required="FALSE" Group="Custom Columns" ID="{84f3ede1-a76a-436a-8763-2278382915e0}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_HyperlinkWithFormatting" Name="test_HyperlinkWithFormatting" />
+        <Field Type="Choice" DisplayName="test_ChoiceSingle" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="Custom Columns" ID="{f94d08e6-2d05-4390-ade0-b9010771a7c9}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_ChoiceSingle" Name="test_ChoiceSingle">
+          <Default>Enter Choice #1</Default>
+          <CHOICES>
+            <CHOICE>Enter Choice #1</CHOICE>
+            <CHOICE>Enter Choice #2</CHOICE>
+            <CHOICE>Enter Choice #3</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="URL" DisplayName="test_Hyperlink" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" Group="Custom Columns" ID="{b62105eb-135c-4659-bf66-f8db43b8ddcf}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_Hyperlink" Name="test_Hyperlink">
+        </Field>
+        <Field Type="Text" DisplayName="test_SingleLineOfText5CharLimit" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="5" Group="Custom Columns" ID="{9ae065f4-06e6-4c49-a501-7b6b75ea3673}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_SingleLineOfText5CharLimit" Name="test_SingleLineOfText5CharLimit">
+        </Field>
+        <Field Type="URL" DisplayName="test_Picture" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Image" Group="Custom Columns" ID="{61c631f5-2fa0-41c7-802b-e99228f345ae}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_Picture" Name="test_Picture">
+        </Field>
+        <Field Type="DateTime" DisplayName="test_DateDefault" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="Custom Columns" FriendlyDisplayFormat="Disabled" ID="{fa0940fb-28fa-4da6-8cd7-4d5a52e508c4}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_DateDefault" Name="test_DateDefault">
+          <Default>[today]</Default>
+        </Field>
+        <Field Type="Calculated" DisplayName="test_Calculated" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Decimals="0" LCID="1033" ResultType="Number" ReadOnly="TRUE" Group="Custom Columns" ID="{7e4d8b89-cf34-42bb-b028-ef6444487d95}" SourceID="{64115d5a-54f4-4e9c-b0fe-cd1f92ecbd19}" StaticName="test_Calculated" Name="test_Calculated">
+          <Formula>=[{fieldtitle:test_Number}]</Formula>
+        </Field>
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x0100087D98ED7D8A7A4CA4DC9BE2934CAA52" Name="test_Item" Description="" Group="Custom Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="55b29417-1042-47f0-9dff-ce8156667f96" Name="TaskOutcome" UpdateChildren="true" />
+            <pnp:FieldRef ID="7e4d8b89-cf34-42bb-b028-ef6444487d95" Name="test_Calculated" UpdateChildren="true" />
+            <pnp:FieldRef ID="7970295b-efdf-4569-a0e2-138cd6fb8499" Name="test_ChoiceMulti" UpdateChildren="true" />
+            <pnp:FieldRef ID="f94d08e6-2d05-4390-ade0-b9010771a7c9" Name="test_ChoiceSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="c6115ba0-70f2-4396-9adb-775f970f6871" Name="test_Currency" UpdateChildren="true" />
+            <pnp:FieldRef ID="86070ddc-2333-4384-bd1a-228a3ee300b1" Name="test_CurrencyMinMax" UpdateChildren="true" />
+            <pnp:FieldRef ID="279a0798-0633-4860-891d-f96d895d8334" Name="test_DateAndTime" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa0940fb-28fa-4da6-8cd7-4d5a52e508c4" Name="test_DateDefault" UpdateChildren="true" />
+            <pnp:FieldRef ID="5f1fadbd-4abf-4636-a6b7-c7d5018ea917" Name="test_DateOnly" UpdateChildren="true" />
+            <pnp:FieldRef ID="f6d3dc0b-3421-4df8-908a-1f26ceb7e5d9" Name="test_FullHTML" UpdateChildren="true" />
+            <pnp:FieldRef ID="b62105eb-135c-4659-bf66-f8db43b8ddcf" Name="test_Hyperlink" UpdateChildren="true" />
+            <pnp:FieldRef ID="84f3ede1-a76a-436a-8763-2278382915e0" Name="test_HyperlinkWithFormatting" UpdateChildren="true" />
+            <pnp:FieldRef ID="ae0464c2-f1ff-400a-a410-3ba61a192021" Name="test_ImageWithFormatting" UpdateChildren="true" />
+            <pnp:FieldRef ID="152b2f20-cf49-4ee4-bac2-3cfb0568b5b4" Name="test_LookupIdMulti" UpdateChildren="true" />
+            <pnp:FieldRef ID="787a5251-265c-4d6b-b896-790d2c91cec8" Name="test_LookupTitleSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="ea045ddc-5744-41e6-8a8d-3722c27dbd84" Name="gfa1479e27d7448c85ee475e755d18ae" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="f3b0adf9-c1a2-4b02-920d-943fba4b3611" Name="TaxCatchAll" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8f6b6dd8-9357-4019-8172-966fcd502ed2" Name="TaxCatchAllLabel" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="0fa1479e-27d7-448c-85ee-475e755d18ae" Name="test_ManagedEmptyRequired" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="d6e3f9f5-8cfd-477f-b17f-bbf63fbaf228" Name="j87ac4cb7e6f47378fbe196223a678e9" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="387ac4cb-7e6f-4737-8fbe-196223a678e9" Name="test_ManagedMultiBadChar" UpdateChildren="true" />
+            <pnp:FieldRef ID="cdeacf43-2827-4909-8842-a46e9a0b2766" Name="k2bbecab34fa4497b1b1edef8799ef00" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="42bbecab-34fa-4497-b1b1-edef8799ef00" Name="test_ManagedSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="645428a8-3755-40c3-b4d3-a3482376abda" Name="aea0b64176b44e8eb73798e5e27addcd" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="aea0b641-76b4-4e8e-b737-98e5e27addcd" Name="test_ManagedSingleEmpty" UpdateChildren="true" />
+            <pnp:FieldRef ID="15d9c48f-af26-4779-a42b-d47e41845a78" Name="n2d9aa18f59b453ea1a3cbf22dff7eaf" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="72d9aa18-f59b-453e-a1a3-cbf22dff7eaf" Name="test_ManagedSingleSubSet" UpdateChildren="true" />
+            <pnp:FieldRef ID="fc358572-15a3-4d3d-8054-6e610c03294a" Name="test_MultipleLinesOfTextPlain" UpdateChildren="true" />
+            <pnp:FieldRef ID="bc83b20c-ac7e-4874-bd4f-5081c96ae78e" Name="test_MultipleLinesOfTextRich" UpdateChildren="true" />
+            <pnp:FieldRef ID="9ba0a405-d8d2-4bc5-a309-5a1ab14c12f8" Name="test_Number" UpdateChildren="true" />
+            <pnp:FieldRef ID="36f7f848-e5b6-4856-8954-93a7ad3270ee" Name="test_Number5DecimalPlace" UpdateChildren="true" />
+            <pnp:FieldRef ID="ee813f07-fade-4b1d-aeaf-2b14c5a2190f" Name="test_NumberMinMax" UpdateChildren="true" />
+            <pnp:FieldRef ID="ddfdbc82-b618-4c84-b56c-ab4313ad530c" Name="test_PersonMembersGroupSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="4eaed503-ae87-40d6-903a-568da0f588e0" Name="test_PersonMulti" UpdateChildren="true" />
+            <pnp:FieldRef ID="e9d65197-88c4-4737-9bc7-07fa4b1fbf95" Name="test_PersonOrGroupSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="61c631f5-2fa0-41c7-802b-e99228f345ae" Name="test_Picture" UpdateChildren="true" />
+            <pnp:FieldRef ID="22c2eed7-6926-42b5-ba98-b6767cd85551" Name="test_RichMediaData" UpdateChildren="true" />
+            <pnp:FieldRef ID="e64c2890-098d-4e38-b39f-dccb1589f42b" Name="test_SingleLineOfText" UpdateChildren="true" />
+            <pnp:FieldRef ID="9ae065f4-06e6-4c49-a501-7b6b75ea3673" Name="test_SingleLineOfText5CharLimit" UpdateChildren="true" />
+            <pnp:FieldRef ID="88c7d49a-5a9d-48f2-a065-f36b3594e876" Name="test_SummaryLinksData" UpdateChildren="true" />
+            <pnp:FieldRef ID="34d95bb3-387d-4bb4-8170-b13c7ddc2e72" Name="test_TaskOutcome" UpdateChildren="true" />
+            <pnp:FieldRef ID="1cd988b6-4deb-4310-bae6-78eee1673db8" Name="test_YesNo" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x01008BE21BEDAAAC3B4E8388AAFB00D636AB" Name="test_Item2" Description="" Group="Custom Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0101008D04B3CEE1CBD64EBB9966B070E264C7" Name="test_Document" Description="" Group="Custom Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename" UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8c06beca-0777-48f7-91c7-6da68bc07b69" Name="Created" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" UpdateChildren="true" />
+            <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="55b29417-1042-47f0-9dff-ce8156667f96" Name="TaskOutcome" UpdateChildren="true" />
+            <pnp:FieldRef ID="7e4d8b89-cf34-42bb-b028-ef6444487d95" Name="test_Calculated" UpdateChildren="true" />
+            <pnp:FieldRef ID="7970295b-efdf-4569-a0e2-138cd6fb8499" Name="test_ChoiceMulti" UpdateChildren="true" />
+            <pnp:FieldRef ID="f94d08e6-2d05-4390-ade0-b9010771a7c9" Name="test_ChoiceSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="c6115ba0-70f2-4396-9adb-775f970f6871" Name="test_Currency" UpdateChildren="true" />
+            <pnp:FieldRef ID="86070ddc-2333-4384-bd1a-228a3ee300b1" Name="test_CurrencyMinMax" UpdateChildren="true" />
+            <pnp:FieldRef ID="279a0798-0633-4860-891d-f96d895d8334" Name="test_DateAndTime" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa0940fb-28fa-4da6-8cd7-4d5a52e508c4" Name="test_DateDefault" UpdateChildren="true" />
+            <pnp:FieldRef ID="5f1fadbd-4abf-4636-a6b7-c7d5018ea917" Name="test_DateOnly" UpdateChildren="true" />
+            <pnp:FieldRef ID="f6d3dc0b-3421-4df8-908a-1f26ceb7e5d9" Name="test_FullHTML" UpdateChildren="true" />
+            <pnp:FieldRef ID="b62105eb-135c-4659-bf66-f8db43b8ddcf" Name="test_Hyperlink" UpdateChildren="true" />
+            <pnp:FieldRef ID="84f3ede1-a76a-436a-8763-2278382915e0" Name="test_HyperlinkWithFormatting" UpdateChildren="true" />
+            <pnp:FieldRef ID="ae0464c2-f1ff-400a-a410-3ba61a192021" Name="test_ImageWithFormatting" UpdateChildren="true" />
+            <pnp:FieldRef ID="152b2f20-cf49-4ee4-bac2-3cfb0568b5b4" Name="test_LookupIdMulti" UpdateChildren="true" />
+            <pnp:FieldRef ID="787a5251-265c-4d6b-b896-790d2c91cec8" Name="test_LookupTitleSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="ea045ddc-5744-41e6-8a8d-3722c27dbd84" Name="gfa1479e27d7448c85ee475e755d18ae" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="f3b0adf9-c1a2-4b02-920d-943fba4b3611" Name="TaxCatchAll" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8f6b6dd8-9357-4019-8172-966fcd502ed2" Name="TaxCatchAllLabel" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="0fa1479e-27d7-448c-85ee-475e755d18ae" Name="test_ManagedEmptyRequired" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="d6e3f9f5-8cfd-477f-b17f-bbf63fbaf228" Name="j87ac4cb7e6f47378fbe196223a678e9" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="387ac4cb-7e6f-4737-8fbe-196223a678e9" Name="test_ManagedMultiBadChar" UpdateChildren="true" />
+            <pnp:FieldRef ID="cdeacf43-2827-4909-8842-a46e9a0b2766" Name="k2bbecab34fa4497b1b1edef8799ef00" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="42bbecab-34fa-4497-b1b1-edef8799ef00" Name="test_ManagedSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="645428a8-3755-40c3-b4d3-a3482376abda" Name="aea0b64176b44e8eb73798e5e27addcd" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="aea0b641-76b4-4e8e-b737-98e5e27addcd" Name="test_ManagedSingleEmpty" UpdateChildren="true" />
+            <pnp:FieldRef ID="15d9c48f-af26-4779-a42b-d47e41845a78" Name="n2d9aa18f59b453ea1a3cbf22dff7eaf" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="72d9aa18-f59b-453e-a1a3-cbf22dff7eaf" Name="test_ManagedSingleSubSet" UpdateChildren="true" />
+            <pnp:FieldRef ID="fc358572-15a3-4d3d-8054-6e610c03294a" Name="test_MultipleLinesOfTextPlain" UpdateChildren="true" />
+            <pnp:FieldRef ID="bc83b20c-ac7e-4874-bd4f-5081c96ae78e" Name="test_MultipleLinesOfTextRich" UpdateChildren="true" />
+            <pnp:FieldRef ID="9ba0a405-d8d2-4bc5-a309-5a1ab14c12f8" Name="test_Number" UpdateChildren="true" />
+            <pnp:FieldRef ID="36f7f848-e5b6-4856-8954-93a7ad3270ee" Name="test_Number5DecimalPlace" UpdateChildren="true" />
+            <pnp:FieldRef ID="ee813f07-fade-4b1d-aeaf-2b14c5a2190f" Name="test_NumberMinMax" UpdateChildren="true" />
+            <pnp:FieldRef ID="ddfdbc82-b618-4c84-b56c-ab4313ad530c" Name="test_PersonMembersGroupSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="4eaed503-ae87-40d6-903a-568da0f588e0" Name="test_PersonMulti" UpdateChildren="true" />
+            <pnp:FieldRef ID="e9d65197-88c4-4737-9bc7-07fa4b1fbf95" Name="test_PersonOrGroupSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="61c631f5-2fa0-41c7-802b-e99228f345ae" Name="test_Picture" UpdateChildren="true" />
+            <pnp:FieldRef ID="22c2eed7-6926-42b5-ba98-b6767cd85551" Name="test_RichMediaData" UpdateChildren="true" />
+            <pnp:FieldRef ID="e64c2890-098d-4e38-b39f-dccb1589f42b" Name="test_SingleLineOfText" UpdateChildren="true" />
+            <pnp:FieldRef ID="9ae065f4-06e6-4c49-a501-7b6b75ea3673" Name="test_SingleLineOfText5CharLimit" UpdateChildren="true" />
+            <pnp:FieldRef ID="88c7d49a-5a9d-48f2-a065-f36b3594e876" Name="test_SummaryLinksData" UpdateChildren="true" />
+            <pnp:FieldRef ID="34d95bb3-387d-4bb4-8170-b13c7ddc2e72" Name="test_TaskOutcome" UpdateChildren="true" />
+            <pnp:FieldRef ID="1cd988b6-4deb-4310-bae6-78eee1673db8" Name="test_YesNo" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0101009D1CB255DA76424F860D91F20E6C411800D6038C8167A2A84882991D0B3B052C28" Name="test_SitePage" Description="" Group="Custom Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename" UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8c06beca-0777-48f7-91c7-6da68bc07b69" Name="Created" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" UpdateChildren="true" />
+            <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="82642ec8-ef9b-478f-acf9-31f7d45fbc31" Name="LinkTitle" UpdateChildren="true" />
+            <pnp:FieldRef ID="7efc33c1-b56b-490e-9c9b-1097e971ba96" Name="ClientSideApplicationId" UpdateChildren="true" />
+            <pnp:FieldRef ID="daef58d7-ccfd-43fc-b776-2e292cc66bba" Name="PageLayoutType" UpdateChildren="true" />
+            <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" UpdateChildren="true" />
+            <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" UpdateChildren="true" />
+            <pnp:FieldRef ID="fb3259ac-bd07-4397-b7aa-03e885b0838e" Name="BannerImageOffset" UpdateChildren="true" />
+            <pnp:FieldRef ID="3f155110-a6a2-4d70-926c-94648101f0e8" Name="Description" UpdateChildren="true" />
+            <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" UpdateChildren="true" />
+            <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" UpdateChildren="true" />
+            <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" UpdateChildren="true" />
+            <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" UpdateChildren="true" />
+            <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" UpdateChildren="true" />
+            <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" UpdateChildren="true" />
+            <pnp:FieldRef ID="55b29417-1042-47f0-9dff-ce8156667f96" Name="TaskOutcome" UpdateChildren="true" />
+            <pnp:FieldRef ID="7e4d8b89-cf34-42bb-b028-ef6444487d95" Name="test_Calculated" UpdateChildren="true" />
+            <pnp:FieldRef ID="7970295b-efdf-4569-a0e2-138cd6fb8499" Name="test_ChoiceMulti" UpdateChildren="true" />
+            <pnp:FieldRef ID="f94d08e6-2d05-4390-ade0-b9010771a7c9" Name="test_ChoiceSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="c6115ba0-70f2-4396-9adb-775f970f6871" Name="test_Currency" UpdateChildren="true" />
+            <pnp:FieldRef ID="86070ddc-2333-4384-bd1a-228a3ee300b1" Name="test_CurrencyMinMax" UpdateChildren="true" />
+            <pnp:FieldRef ID="279a0798-0633-4860-891d-f96d895d8334" Name="test_DateAndTime" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa0940fb-28fa-4da6-8cd7-4d5a52e508c4" Name="test_DateDefault" UpdateChildren="true" />
+            <pnp:FieldRef ID="5f1fadbd-4abf-4636-a6b7-c7d5018ea917" Name="test_DateOnly" UpdateChildren="true" />
+            <pnp:FieldRef ID="f6d3dc0b-3421-4df8-908a-1f26ceb7e5d9" Name="test_FullHTML" UpdateChildren="true" />
+            <pnp:FieldRef ID="b62105eb-135c-4659-bf66-f8db43b8ddcf" Name="test_Hyperlink" UpdateChildren="true" />
+            <pnp:FieldRef ID="84f3ede1-a76a-436a-8763-2278382915e0" Name="test_HyperlinkWithFormatting" UpdateChildren="true" />
+            <pnp:FieldRef ID="ae0464c2-f1ff-400a-a410-3ba61a192021" Name="test_ImageWithFormatting" UpdateChildren="true" />
+            <pnp:FieldRef ID="152b2f20-cf49-4ee4-bac2-3cfb0568b5b4" Name="test_LookupIdMulti" UpdateChildren="true" />
+            <pnp:FieldRef ID="787a5251-265c-4d6b-b896-790d2c91cec8" Name="test_LookupTitleSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="ea045ddc-5744-41e6-8a8d-3722c27dbd84" Name="gfa1479e27d7448c85ee475e755d18ae" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="f3b0adf9-c1a2-4b02-920d-943fba4b3611" Name="TaxCatchAll" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8f6b6dd8-9357-4019-8172-966fcd502ed2" Name="TaxCatchAllLabel" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="0fa1479e-27d7-448c-85ee-475e755d18ae" Name="test_ManagedEmptyRequired" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="d6e3f9f5-8cfd-477f-b17f-bbf63fbaf228" Name="j87ac4cb7e6f47378fbe196223a678e9" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="387ac4cb-7e6f-4737-8fbe-196223a678e9" Name="test_ManagedMultiBadChar" UpdateChildren="true" />
+            <pnp:FieldRef ID="cdeacf43-2827-4909-8842-a46e9a0b2766" Name="k2bbecab34fa4497b1b1edef8799ef00" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="42bbecab-34fa-4497-b1b1-edef8799ef00" Name="test_ManagedSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="645428a8-3755-40c3-b4d3-a3482376abda" Name="aea0b64176b44e8eb73798e5e27addcd" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="aea0b641-76b4-4e8e-b737-98e5e27addcd" Name="test_ManagedSingleEmpty" UpdateChildren="true" />
+            <pnp:FieldRef ID="15d9c48f-af26-4779-a42b-d47e41845a78" Name="n2d9aa18f59b453ea1a3cbf22dff7eaf" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="72d9aa18-f59b-453e-a1a3-cbf22dff7eaf" Name="test_ManagedSingleSubSet" UpdateChildren="true" />
+            <pnp:FieldRef ID="fc358572-15a3-4d3d-8054-6e610c03294a" Name="test_MultipleLinesOfTextPlain" UpdateChildren="true" />
+            <pnp:FieldRef ID="bc83b20c-ac7e-4874-bd4f-5081c96ae78e" Name="test_MultipleLinesOfTextRich" UpdateChildren="true" />
+            <pnp:FieldRef ID="9ba0a405-d8d2-4bc5-a309-5a1ab14c12f8" Name="test_Number" UpdateChildren="true" />
+            <pnp:FieldRef ID="36f7f848-e5b6-4856-8954-93a7ad3270ee" Name="test_Number5DecimalPlace" UpdateChildren="true" />
+            <pnp:FieldRef ID="ee813f07-fade-4b1d-aeaf-2b14c5a2190f" Name="test_NumberMinMax" UpdateChildren="true" />
+            <pnp:FieldRef ID="ddfdbc82-b618-4c84-b56c-ab4313ad530c" Name="test_PersonMembersGroupSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="4eaed503-ae87-40d6-903a-568da0f588e0" Name="test_PersonMulti" UpdateChildren="true" />
+            <pnp:FieldRef ID="e9d65197-88c4-4737-9bc7-07fa4b1fbf95" Name="test_PersonOrGroupSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="61c631f5-2fa0-41c7-802b-e99228f345ae" Name="test_Picture" UpdateChildren="true" />
+            <pnp:FieldRef ID="22c2eed7-6926-42b5-ba98-b6767cd85551" Name="test_RichMediaData" UpdateChildren="true" />
+            <pnp:FieldRef ID="e64c2890-098d-4e38-b39f-dccb1589f42b" Name="test_SingleLineOfText" UpdateChildren="true" />
+            <pnp:FieldRef ID="9ae065f4-06e6-4c49-a501-7b6b75ea3673" Name="test_SingleLineOfText5CharLimit" UpdateChildren="true" />
+            <pnp:FieldRef ID="88c7d49a-5a9d-48f2-a065-f36b3594e876" Name="test_SummaryLinksData" UpdateChildren="true" />
+            <pnp:FieldRef ID="34d95bb3-387d-4bb4-8170-b13c7ddc2e72" Name="test_TaskOutcome" UpdateChildren="true" />
+            <pnp:FieldRef ID="1cd988b6-4deb-4310-bae6-78eee1673db8" Name="test_YesNo" UpdateChildren="true" />
+          </pnp:FieldRefs>
+          <pnp:DocumentTemplate TargetName="/_layouts/15/CreateSitePage.aspx" />
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0101009D1CB255DA76424F860D91F20E6C411800F15F73B94CED1A4687DBCAFE0F664A4C" Name="MikeTest" Description="" Group="Custom Content Types" ReadOnly="true" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename" UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8c06beca-0777-48f7-91c7-6da68bc07b69" Name="Created" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" UpdateChildren="true" />
+            <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="82642ec8-ef9b-478f-acf9-31f7d45fbc31" Name="LinkTitle" UpdateChildren="true" />
+            <pnp:FieldRef ID="7efc33c1-b56b-490e-9c9b-1097e971ba96" Name="ClientSideApplicationId" UpdateChildren="true" />
+            <pnp:FieldRef ID="daef58d7-ccfd-43fc-b776-2e292cc66bba" Name="PageLayoutType" UpdateChildren="true" />
+            <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" UpdateChildren="true" />
+            <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" UpdateChildren="true" />
+            <pnp:FieldRef ID="fb3259ac-bd07-4397-b7aa-03e885b0838e" Name="BannerImageOffset" UpdateChildren="true" />
+            <pnp:FieldRef ID="3f155110-a6a2-4d70-926c-94648101f0e8" Name="Description" UpdateChildren="true" />
+            <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" UpdateChildren="true" />
+            <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" UpdateChildren="true" />
+            <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" UpdateChildren="true" />
+            <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" UpdateChildren="true" />
+            <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" UpdateChildren="true" />
+            <pnp:FieldRef ID="40270da4-0a34-4c14-8c30-59e065a28a4d" Name="WSPublishState" UpdateChildren="true" />
+            <pnp:FieldRef ID="560f32ce-6a64-4aa0-b0b8-a0512456d92b" Name="MikeSiteColumnGallery" UpdateChildren="true" />
+          </pnp:FieldRefs>
+          <pnp:DocumentTemplate TargetName="/_layouts/15/CreateSitePage.aspx" />
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0102001F03A69DDF3C7846B0FE2EC5E9A08CE1" Name="test_Event" Description="" Group="Custom Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="288f5f32-8462-4175-8f09-dd7ba29359a9" Name="Location" UpdateChildren="true" />
+            <pnp:FieldRef ID="64cd368d-2f95-4bfc-a1f9-8d4324ecb007" Name="EventDate" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="2684f9f2-54be-429f-ba06-76754fc056bf" Name="EndDate" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="9da97a8a-1da5-4a77-98d3-4bc10456e700" Name="Description" UpdateChildren="true" />
+            <pnp:FieldRef ID="6df9bd52-550e-4a30-bc31-a4366832a87d" Name="Category" UpdateChildren="true" />
+            <pnp:FieldRef ID="7d95d1f4-f5fd-4a70-90cd-b35abc9b5bc8" Name="fAllDayEvent" UpdateChildren="true" />
+            <pnp:FieldRef ID="f2e63656-135e-4f1c-8fc2-ccbe74071901" Name="fRecurrence" UpdateChildren="true" />
+            <pnp:FieldRef ID="08fc65f9-48eb-4e99-bd61-5946c439e691" Name="WorkspaceLink" UpdateChildren="true" />
+            <pnp:FieldRef ID="5d1d4e76-091a-4e03-ae83-6a59847731c0" Name="EventType" UpdateChildren="true" />
+            <pnp:FieldRef ID="63055d04-01b5-48f3-9e1e-e564e7c6b23b" Name="UID" UpdateChildren="true" />
+            <pnp:FieldRef ID="dfcc8fff-7c4c-45d6-94ed-14ce0719efef" Name="RecurrenceID" UpdateChildren="true" />
+            <pnp:FieldRef ID="b8bbe503-bb22-4237-8d9e-0587756a2176" Name="EventCanceled" UpdateChildren="true" />
+            <pnp:FieldRef ID="4d54445d-1c84-4a6d-b8db-a51ded4e1acc" Name="Duration" UpdateChildren="true" />
+            <pnp:FieldRef ID="d12572d0-0a1e-4438-89b5-4d0430be7603" Name="RecurrenceData" UpdateChildren="true" />
+            <pnp:FieldRef ID="6cc1c612-748a-48d8-88f2-944f477f301b" Name="TimeZone" UpdateChildren="true" />
+            <pnp:FieldRef ID="c4b72ed6-45aa-4422-bff1-2b6750d30819" Name="XMLTZone" UpdateChildren="true" />
+            <pnp:FieldRef ID="9b2bed84-7769-40e3-9b1d-7954a4053834" Name="MasterSeriesItemID" UpdateChildren="true" />
+            <pnp:FieldRef ID="881eac4a-55a5-48b6-a28e-8329d7486120" Name="Workspace" UpdateChildren="true" />
+            <pnp:FieldRef ID="55b29417-1042-47f0-9dff-ce8156667f96" Name="TaskOutcome" UpdateChildren="true" />
+            <pnp:FieldRef ID="7e4d8b89-cf34-42bb-b028-ef6444487d95" Name="test_Calculated" UpdateChildren="true" />
+            <pnp:FieldRef ID="7970295b-efdf-4569-a0e2-138cd6fb8499" Name="test_ChoiceMulti" UpdateChildren="true" />
+            <pnp:FieldRef ID="f94d08e6-2d05-4390-ade0-b9010771a7c9" Name="test_ChoiceSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="c6115ba0-70f2-4396-9adb-775f970f6871" Name="test_Currency" UpdateChildren="true" />
+            <pnp:FieldRef ID="86070ddc-2333-4384-bd1a-228a3ee300b1" Name="test_CurrencyMinMax" UpdateChildren="true" />
+            <pnp:FieldRef ID="279a0798-0633-4860-891d-f96d895d8334" Name="test_DateAndTime" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa0940fb-28fa-4da6-8cd7-4d5a52e508c4" Name="test_DateDefault" UpdateChildren="true" />
+            <pnp:FieldRef ID="5f1fadbd-4abf-4636-a6b7-c7d5018ea917" Name="test_DateOnly" UpdateChildren="true" />
+            <pnp:FieldRef ID="f6d3dc0b-3421-4df8-908a-1f26ceb7e5d9" Name="test_FullHTML" UpdateChildren="true" />
+            <pnp:FieldRef ID="b62105eb-135c-4659-bf66-f8db43b8ddcf" Name="test_Hyperlink" UpdateChildren="true" />
+            <pnp:FieldRef ID="84f3ede1-a76a-436a-8763-2278382915e0" Name="test_HyperlinkWithFormatting" UpdateChildren="true" />
+            <pnp:FieldRef ID="ae0464c2-f1ff-400a-a410-3ba61a192021" Name="test_ImageWithFormatting" UpdateChildren="true" />
+            <pnp:FieldRef ID="152b2f20-cf49-4ee4-bac2-3cfb0568b5b4" Name="test_LookupIdMulti" UpdateChildren="true" />
+            <pnp:FieldRef ID="787a5251-265c-4d6b-b896-790d2c91cec8" Name="test_LookupTitleSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="ea045ddc-5744-41e6-8a8d-3722c27dbd84" Name="gfa1479e27d7448c85ee475e755d18ae" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="f3b0adf9-c1a2-4b02-920d-943fba4b3611" Name="TaxCatchAll" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8f6b6dd8-9357-4019-8172-966fcd502ed2" Name="TaxCatchAllLabel" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="0fa1479e-27d7-448c-85ee-475e755d18ae" Name="test_ManagedEmptyRequired" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="d6e3f9f5-8cfd-477f-b17f-bbf63fbaf228" Name="j87ac4cb7e6f47378fbe196223a678e9" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="387ac4cb-7e6f-4737-8fbe-196223a678e9" Name="test_ManagedMultiBadChar" UpdateChildren="true" />
+            <pnp:FieldRef ID="cdeacf43-2827-4909-8842-a46e9a0b2766" Name="k2bbecab34fa4497b1b1edef8799ef00" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="42bbecab-34fa-4497-b1b1-edef8799ef00" Name="test_ManagedSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="645428a8-3755-40c3-b4d3-a3482376abda" Name="aea0b64176b44e8eb73798e5e27addcd" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="aea0b641-76b4-4e8e-b737-98e5e27addcd" Name="test_ManagedSingleEmpty" UpdateChildren="true" />
+            <pnp:FieldRef ID="15d9c48f-af26-4779-a42b-d47e41845a78" Name="n2d9aa18f59b453ea1a3cbf22dff7eaf" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="72d9aa18-f59b-453e-a1a3-cbf22dff7eaf" Name="test_ManagedSingleSubSet" UpdateChildren="true" />
+            <pnp:FieldRef ID="fc358572-15a3-4d3d-8054-6e610c03294a" Name="test_MultipleLinesOfTextPlain" UpdateChildren="true" />
+            <pnp:FieldRef ID="bc83b20c-ac7e-4874-bd4f-5081c96ae78e" Name="test_MultipleLinesOfTextRich" UpdateChildren="true" />
+            <pnp:FieldRef ID="9ba0a405-d8d2-4bc5-a309-5a1ab14c12f8" Name="test_Number" UpdateChildren="true" />
+            <pnp:FieldRef ID="36f7f848-e5b6-4856-8954-93a7ad3270ee" Name="test_Number5DecimalPlace" UpdateChildren="true" />
+            <pnp:FieldRef ID="ee813f07-fade-4b1d-aeaf-2b14c5a2190f" Name="test_NumberMinMax" UpdateChildren="true" />
+            <pnp:FieldRef ID="ddfdbc82-b618-4c84-b56c-ab4313ad530c" Name="test_PersonMembersGroupSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="4eaed503-ae87-40d6-903a-568da0f588e0" Name="test_PersonMulti" UpdateChildren="true" />
+            <pnp:FieldRef ID="e9d65197-88c4-4737-9bc7-07fa4b1fbf95" Name="test_PersonOrGroupSingle" UpdateChildren="true" />
+            <pnp:FieldRef ID="61c631f5-2fa0-41c7-802b-e99228f345ae" Name="test_Picture" UpdateChildren="true" />
+            <pnp:FieldRef ID="22c2eed7-6926-42b5-ba98-b6767cd85551" Name="test_RichMediaData" UpdateChildren="true" />
+            <pnp:FieldRef ID="e64c2890-098d-4e38-b39f-dccb1589f42b" Name="test_SingleLineOfText" UpdateChildren="true" />
+            <pnp:FieldRef ID="9ae065f4-06e6-4c49-a501-7b6b75ea3673" Name="test_SingleLineOfText5CharLimit" UpdateChildren="true" />
+            <pnp:FieldRef ID="88c7d49a-5a9d-48f2-a065-f36b3594e876" Name="test_SummaryLinksData" UpdateChildren="true" />
+            <pnp:FieldRef ID="34d95bb3-387d-4bb4-8170-b13c7ddc2e72" Name="test_TaskOutcome" UpdateChildren="true" />
+            <pnp:FieldRef ID="1cd988b6-4deb-4310-bae6-78eee1673db8" Name="test_YesNo" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="test_Documents" Description="" DocumentTemplate="{site}/Shared Documents/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="Shared Documents" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" ContentTypesEnabled="true" EnableAttachments="false" DefaultDisplayFormUrl="{site}/Shared Documents/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Shared Documents/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Shared Documents/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="0" Overwrite="false" />
+          </pnp:PropertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101008D04B3CEE1CBD64EBB9966B070E264C7" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{5A362AA2-E342-4E87-BED1-8FCDDA1DA800}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="15d9c48f-af26-4779-a42b-d47e41845a78" Name="n2d9aa18f59b453ea1a3cbf22dff7eaf" Hidden="true" DisplayName="test_ManagedSingleSubSet_0" />
+            <pnp:FieldRef ID="645428a8-3755-40c3-b4d3-a3482376abda" Name="aea0b64176b44e8eb73798e5e27addcd" Hidden="true" DisplayName="test_ManagedSingleEmpty_0" />
+            <pnp:FieldRef ID="cdeacf43-2827-4909-8842-a46e9a0b2766" Name="k2bbecab34fa4497b1b1edef8799ef00" Hidden="true" DisplayName="test_ManagedSingle_0" />
+            <pnp:FieldRef ID="d6e3f9f5-8cfd-477f-b17f-bbf63fbaf228" Name="j87ac4cb7e6f47378fbe196223a678e9" Hidden="true" DisplayName="test_ManagedMultiBadChar_0" />
+            <pnp:FieldRef ID="ea045ddc-5744-41e6-8a8d-3722c27dbd84" Name="gfa1479e27d7448c85ee475e755d18ae" Hidden="true" DisplayName="test_ManagedEmptyRequired_0" />
+            <pnp:FieldRef ID="55b29417-1042-47f0-9dff-ce8156667f96" Name="TaskOutcome" DisplayName="Task Outcome" />
+            <pnp:FieldRef ID="7970295b-efdf-4569-a0e2-138cd6fb8499" Name="test_ChoiceMulti" DisplayName="test_ChoiceMulti" />
+            <pnp:FieldRef ID="f94d08e6-2d05-4390-ade0-b9010771a7c9" Name="test_ChoiceSingle" DisplayName="test_ChoiceSingle" />
+            <pnp:FieldRef ID="c6115ba0-70f2-4396-9adb-775f970f6871" Name="test_Currency" DisplayName="test_Currency" />
+            <pnp:FieldRef ID="86070ddc-2333-4384-bd1a-228a3ee300b1" Name="test_CurrencyMinMax" DisplayName="test_CurrencyMinMax" />
+            <pnp:FieldRef ID="279a0798-0633-4860-891d-f96d895d8334" Name="test_DateAndTime" DisplayName="test_DateAndTime" />
+            <pnp:FieldRef ID="fa0940fb-28fa-4da6-8cd7-4d5a52e508c4" Name="test_DateDefault" DisplayName="test_DateDefault" />
+            <pnp:FieldRef ID="5f1fadbd-4abf-4636-a6b7-c7d5018ea917" Name="test_DateOnly" DisplayName="test_DateOnly" />
+            <pnp:FieldRef ID="f6d3dc0b-3421-4df8-908a-1f26ceb7e5d9" Name="test_FullHTML" DisplayName="test_FullHTML" />
+            <pnp:FieldRef ID="b62105eb-135c-4659-bf66-f8db43b8ddcf" Name="test_Hyperlink" DisplayName="test_Hyperlink" />
+            <pnp:FieldRef ID="84f3ede1-a76a-436a-8763-2278382915e0" Name="test_HyperlinkWithFormatting" DisplayName="test_HyperlinkWithFormatting" />
+            <pnp:FieldRef ID="ae0464c2-f1ff-400a-a410-3ba61a192021" Name="test_ImageWithFormatting" DisplayName="test_ImageWithFormatting" />
+            <pnp:FieldRef ID="152b2f20-cf49-4ee4-bac2-3cfb0568b5b4" Name="test_LookupIdMulti" DisplayName="test_LookupIdMulti" />
+            <pnp:FieldRef ID="787a5251-265c-4d6b-b896-790d2c91cec8" Name="test_LookupTitleSingle" DisplayName="test_LookupTitleSingle" />
+            <pnp:FieldRef ID="0fa1479e-27d7-448c-85ee-475e755d18ae" Name="test_ManagedEmptyRequired" DisplayName="test_ManagedEmptyRequired" />
+            <pnp:FieldRef ID="387ac4cb-7e6f-4737-8fbe-196223a678e9" Name="test_ManagedMultiBadChar" DisplayName="test_ManagedMultiBadChar" />
+            <pnp:FieldRef ID="42bbecab-34fa-4497-b1b1-edef8799ef00" Name="test_ManagedSingle" DisplayName="test_ManagedSingle" />
+            <pnp:FieldRef ID="aea0b641-76b4-4e8e-b737-98e5e27addcd" Name="test_ManagedSingleEmpty" DisplayName="test_ManagedSingleEmpty" />
+            <pnp:FieldRef ID="72d9aa18-f59b-453e-a1a3-cbf22dff7eaf" Name="test_ManagedSingleSubSet" DisplayName="test_ManagedSingleSubSet" />
+            <pnp:FieldRef ID="fc358572-15a3-4d3d-8054-6e610c03294a" Name="test_MultipleLinesOfTextPlain" DisplayName="test_MultipleLinesOfTextPlain" />
+            <pnp:FieldRef ID="bc83b20c-ac7e-4874-bd4f-5081c96ae78e" Name="test_MultipleLinesOfTextRich" DisplayName="test_MultipleLinesOfTextRich" />
+            <pnp:FieldRef ID="9ba0a405-d8d2-4bc5-a309-5a1ab14c12f8" Name="test_Number" DisplayName="test_Number" />
+            <pnp:FieldRef ID="36f7f848-e5b6-4856-8954-93a7ad3270ee" Name="test_Number5DecimalPlace" DisplayName="test_Number5DecimalPlace" />
+            <pnp:FieldRef ID="ee813f07-fade-4b1d-aeaf-2b14c5a2190f" Name="test_NumberMinMax" DisplayName="test_NumberMinMax" />
+            <pnp:FieldRef ID="ddfdbc82-b618-4c84-b56c-ab4313ad530c" Name="test_PersonMembersGroupSingle" DisplayName="test_PersonMembersGroupSingle" />
+            <pnp:FieldRef ID="4eaed503-ae87-40d6-903a-568da0f588e0" Name="test_PersonMulti" DisplayName="test_PersonMulti" />
+            <pnp:FieldRef ID="e9d65197-88c4-4737-9bc7-07fa4b1fbf95" Name="test_PersonOrGroupSingle" DisplayName="test_PersonOrGroupSingle" />
+            <pnp:FieldRef ID="61c631f5-2fa0-41c7-802b-e99228f345ae" Name="test_Picture" DisplayName="test_Picture" />
+            <pnp:FieldRef ID="22c2eed7-6926-42b5-ba98-b6767cd85551" Name="test_RichMediaData" DisplayName="test_RichMediaData" />
+            <pnp:FieldRef ID="e64c2890-098d-4e38-b39f-dccb1589f42b" Name="test_SingleLineOfText" DisplayName="test_SingleLineOfText" />
+            <pnp:FieldRef ID="9ae065f4-06e6-4c49-a501-7b6b75ea3673" Name="test_SingleLineOfText5CharLimit" DisplayName="test_SingleLineOfText5CharLimit" />
+            <pnp:FieldRef ID="88c7d49a-5a9d-48f2-a065-f36b3594e876" Name="test_SummaryLinksData" DisplayName="test_SummaryLinksData" />
+            <pnp:FieldRef ID="34d95bb3-387d-4bb4-8170-b13c7ddc2e72" Name="test_TaskOutcome" DisplayName="test_TaskOutcome" />
+            <pnp:FieldRef ID="1cd988b6-4deb-4310-bae6-78eee1673db8" Name="test_YesNo" DisplayName="test_YesNo" />
+            <pnp:FieldRef ID="7e4d8b89-cf34-42bb-b028-ef6444487d95" Name="test_Calculated" DisplayName="test_Calculated" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://canadacentral1.pushnp.svc.ms/notifications?token=1612b1d5-5619-44c9-92cf-22cf02b05b48" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Site Pages" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="119" Url="SitePages" EnableVersioning="true" EnableMinorVersions="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="1" TemplateFeatureID="00bfea71-c796-4402-9f2f-0eb9a6e71b18" ContentTypesEnabled="true" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SitePages/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SitePages/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SitePages/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C411800D6038C8167A2A84882991D0B3B052C28" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{AD4B990B-CC22-4E28-AFA1-F6B07A7B3B84}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="By Author" Url="{site}/SitePages/Forms/ByAuthor.aspx" Level="1" BaseViewID="4" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="Author" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="Modified" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{71FF4712-714D-4870-9D41-E3E8109EB090}" Type="HTML" DisplayName="All Pages" Url="{site}/SitePages/Forms/AllPages.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Modified" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{3FA5493A-E972-4C99-9471-8D6F954E62EC}" Type="HTML" DisplayName="Recent Changes" Url="{site}/SitePages/Forms/RecentChanges.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Modified" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{4F57A237-13A4-4FD8-9AEF-FAA855A5A2E2}" Type="HTML" DisplayName="By Editor" Url="{site}/SitePages/Forms/ByEditor.aspx" Level="1" BaseViewID="5" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="Editor" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{F09ADFDC-DF4F-4062-A06F-CD0B3919F93C}" Type="HTML" DisplayName="Created By Me" Url="{site}/SitePages/Forms/CreatedByMe.aspx" Level="1" BaseViewID="3" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="Author" />
+                    <Value Type="Integer">
+                      <UserID />
+                    </Value>
+                  </Eq>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="15d9c48f-af26-4779-a42b-d47e41845a78" Name="n2d9aa18f59b453ea1a3cbf22dff7eaf" Hidden="true" DisplayName="test_ManagedSingleSubSet_0" />
+            <pnp:FieldRef ID="645428a8-3755-40c3-b4d3-a3482376abda" Name="aea0b64176b44e8eb73798e5e27addcd" Hidden="true" DisplayName="test_ManagedSingleEmpty_0" />
+            <pnp:FieldRef ID="cdeacf43-2827-4909-8842-a46e9a0b2766" Name="k2bbecab34fa4497b1b1edef8799ef00" Hidden="true" DisplayName="test_ManagedSingle_0" />
+            <pnp:FieldRef ID="d6e3f9f5-8cfd-477f-b17f-bbf63fbaf228" Name="j87ac4cb7e6f47378fbe196223a678e9" Hidden="true" DisplayName="test_ManagedMultiBadChar_0" />
+            <pnp:FieldRef ID="ea045ddc-5744-41e6-8a8d-3722c27dbd84" Name="gfa1479e27d7448c85ee475e755d18ae" Hidden="true" DisplayName="test_ManagedEmptyRequired_0" />
+            <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" DisplayName="Authoring Canvas Content" />
+            <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" DisplayName="Banner Image URL" />
+            <pnp:FieldRef ID="3f155110-a6a2-4d70-926c-94648101f0e8" Name="Description" DisplayName="Description" />
+            <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" DisplayName="Promoted State" />
+            <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" DisplayName="First Published Date" />
+            <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" DisplayName="Page Layout Content" />
+            <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" DisplayName="Author Byline" />
+            <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" DisplayName="Topic header" />
+            <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" DisplayName="Site Page Flags" />
+            <pnp:FieldRef ID="0e7b982f-698a-4d0c-aacb-f16906f66d30" Name="_OriginalSourceUrl" DisplayName="Original Source Url" />
+            <pnp:FieldRef ID="36193413-dd5c-4096-8c1e-1b40098b9ba3" Name="_OriginalSourceSiteId" DisplayName="Original Source Site ID" />
+            <pnp:FieldRef ID="3477a5bc-c605-4b2e-a7c1-8db8f13c017e" Name="_OriginalSourceWebId" DisplayName="Original Source Web ID" />
+            <pnp:FieldRef ID="139da674-dbf6-439f-98e0-4eb05fa9a669" Name="_OriginalSourceListId" DisplayName="Original Source List ID" />
+            <pnp:FieldRef ID="91e86a43-75f2-426f-80da-35edfb47d55d" Name="_OriginalSourceItemId" DisplayName="Original Source Item ID" />
+            <pnp:FieldRef ID="55b29417-1042-47f0-9dff-ce8156667f96" Name="TaskOutcome" DisplayName="Task Outcome" />
+            <pnp:FieldRef ID="7970295b-efdf-4569-a0e2-138cd6fb8499" Name="test_ChoiceMulti" DisplayName="test_ChoiceMulti" />
+            <pnp:FieldRef ID="f94d08e6-2d05-4390-ade0-b9010771a7c9" Name="test_ChoiceSingle" DisplayName="test_ChoiceSingle" />
+            <pnp:FieldRef ID="c6115ba0-70f2-4396-9adb-775f970f6871" Name="test_Currency" DisplayName="test_Currency" />
+            <pnp:FieldRef ID="86070ddc-2333-4384-bd1a-228a3ee300b1" Name="test_CurrencyMinMax" DisplayName="test_CurrencyMinMax" />
+            <pnp:FieldRef ID="279a0798-0633-4860-891d-f96d895d8334" Name="test_DateAndTime" DisplayName="test_DateAndTime" />
+            <pnp:FieldRef ID="fa0940fb-28fa-4da6-8cd7-4d5a52e508c4" Name="test_DateDefault" DisplayName="test_DateDefault" />
+            <pnp:FieldRef ID="5f1fadbd-4abf-4636-a6b7-c7d5018ea917" Name="test_DateOnly" DisplayName="test_DateOnly" />
+            <pnp:FieldRef ID="f6d3dc0b-3421-4df8-908a-1f26ceb7e5d9" Name="test_FullHTML" DisplayName="test_FullHTML" />
+            <pnp:FieldRef ID="b62105eb-135c-4659-bf66-f8db43b8ddcf" Name="test_Hyperlink" DisplayName="test_Hyperlink" />
+            <pnp:FieldRef ID="84f3ede1-a76a-436a-8763-2278382915e0" Name="test_HyperlinkWithFormatting" DisplayName="test_HyperlinkWithFormatting" />
+            <pnp:FieldRef ID="ae0464c2-f1ff-400a-a410-3ba61a192021" Name="test_ImageWithFormatting" DisplayName="test_ImageWithFormatting" />
+            <pnp:FieldRef ID="152b2f20-cf49-4ee4-bac2-3cfb0568b5b4" Name="test_LookupIdMulti" DisplayName="test_LookupIdMulti" />
+            <pnp:FieldRef ID="787a5251-265c-4d6b-b896-790d2c91cec8" Name="test_LookupTitleSingle" DisplayName="test_LookupTitleSingle" />
+            <pnp:FieldRef ID="0fa1479e-27d7-448c-85ee-475e755d18ae" Name="test_ManagedEmptyRequired" DisplayName="test_ManagedEmptyRequired" />
+            <pnp:FieldRef ID="387ac4cb-7e6f-4737-8fbe-196223a678e9" Name="test_ManagedMultiBadChar" DisplayName="test_ManagedMultiBadChar" />
+            <pnp:FieldRef ID="42bbecab-34fa-4497-b1b1-edef8799ef00" Name="test_ManagedSingle" DisplayName="test_ManagedSingle" />
+            <pnp:FieldRef ID="aea0b641-76b4-4e8e-b737-98e5e27addcd" Name="test_ManagedSingleEmpty" DisplayName="test_ManagedSingleEmpty" />
+            <pnp:FieldRef ID="72d9aa18-f59b-453e-a1a3-cbf22dff7eaf" Name="test_ManagedSingleSubSet" DisplayName="test_ManagedSingleSubSet" />
+            <pnp:FieldRef ID="fc358572-15a3-4d3d-8054-6e610c03294a" Name="test_MultipleLinesOfTextPlain" DisplayName="test_MultipleLinesOfTextPlain" />
+            <pnp:FieldRef ID="bc83b20c-ac7e-4874-bd4f-5081c96ae78e" Name="test_MultipleLinesOfTextRich" DisplayName="test_MultipleLinesOfTextRich" />
+            <pnp:FieldRef ID="9ba0a405-d8d2-4bc5-a309-5a1ab14c12f8" Name="test_Number" DisplayName="test_Number" />
+            <pnp:FieldRef ID="36f7f848-e5b6-4856-8954-93a7ad3270ee" Name="test_Number5DecimalPlace" DisplayName="test_Number5DecimalPlace" />
+            <pnp:FieldRef ID="ee813f07-fade-4b1d-aeaf-2b14c5a2190f" Name="test_NumberMinMax" DisplayName="test_NumberMinMax" />
+            <pnp:FieldRef ID="ddfdbc82-b618-4c84-b56c-ab4313ad530c" Name="test_PersonMembersGroupSingle" DisplayName="test_PersonMembersGroupSingle" />
+            <pnp:FieldRef ID="4eaed503-ae87-40d6-903a-568da0f588e0" Name="test_PersonMulti" DisplayName="test_PersonMulti" />
+            <pnp:FieldRef ID="e9d65197-88c4-4737-9bc7-07fa4b1fbf95" Name="test_PersonOrGroupSingle" DisplayName="test_PersonOrGroupSingle" />
+            <pnp:FieldRef ID="61c631f5-2fa0-41c7-802b-e99228f345ae" Name="test_Picture" DisplayName="test_Picture" />
+            <pnp:FieldRef ID="22c2eed7-6926-42b5-ba98-b6767cd85551" Name="test_RichMediaData" DisplayName="test_RichMediaData" />
+            <pnp:FieldRef ID="e64c2890-098d-4e38-b39f-dccb1589f42b" Name="test_SingleLineOfText" DisplayName="test_SingleLineOfText" />
+            <pnp:FieldRef ID="9ae065f4-06e6-4c49-a501-7b6b75ea3673" Name="test_SingleLineOfText5CharLimit" DisplayName="test_SingleLineOfText5CharLimit" />
+            <pnp:FieldRef ID="88c7d49a-5a9d-48f2-a065-f36b3594e876" Name="test_SummaryLinksData" DisplayName="test_SummaryLinksData" />
+            <pnp:FieldRef ID="34d95bb3-387d-4bb4-8170-b13c7ddc2e72" Name="test_TaskOutcome" DisplayName="test_TaskOutcome" />
+            <pnp:FieldRef ID="1cd988b6-4deb-4310-bae6-78eee1673db8" Name="test_YesNo" DisplayName="test_YesNo" />
+            <pnp:FieldRef ID="7e4d8b89-cf34-42bb-b028-ef6444487d95" Name="test_Calculated" DisplayName="test_Calculated" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://canadacentral1.pushnp.svc.ms/notifications?token=e6059540-2ef6-4540-a9b3-18cedc05fbea" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="test_basicList" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/test_basicList" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/test_basicList/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/test_basicList/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/test_basicList/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0100087D98ED7D8A7A4CA4DC9BE2934CAA52" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01008BE21BEDAAAC3B4E8388AAFB00D636AB" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{BF9FD902-EC99-4B19-AE07-4C63A725A7AF}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/test_basicList/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="15d9c48f-af26-4779-a42b-d47e41845a78" Name="n2d9aa18f59b453ea1a3cbf22dff7eaf" Hidden="true" DisplayName="test_ManagedSingleSubSet_0" />
+            <pnp:FieldRef ID="645428a8-3755-40c3-b4d3-a3482376abda" Name="aea0b64176b44e8eb73798e5e27addcd" Hidden="true" DisplayName="test_ManagedSingleEmpty_0" />
+            <pnp:FieldRef ID="cdeacf43-2827-4909-8842-a46e9a0b2766" Name="k2bbecab34fa4497b1b1edef8799ef00" Hidden="true" DisplayName="test_ManagedSingle_0" />
+            <pnp:FieldRef ID="d6e3f9f5-8cfd-477f-b17f-bbf63fbaf228" Name="j87ac4cb7e6f47378fbe196223a678e9" Hidden="true" DisplayName="test_ManagedMultiBadChar_0" />
+            <pnp:FieldRef ID="ea045ddc-5744-41e6-8a8d-3722c27dbd84" Name="gfa1479e27d7448c85ee475e755d18ae" Hidden="true" DisplayName="test_ManagedEmptyRequired_0" />
+            <pnp:FieldRef ID="55b29417-1042-47f0-9dff-ce8156667f96" Name="TaskOutcome" DisplayName="Task Outcome" />
+            <pnp:FieldRef ID="7970295b-efdf-4569-a0e2-138cd6fb8499" Name="test_ChoiceMulti" DisplayName="test_ChoiceMulti" />
+            <pnp:FieldRef ID="f94d08e6-2d05-4390-ade0-b9010771a7c9" Name="test_ChoiceSingle" DisplayName="test_ChoiceSingle" />
+            <pnp:FieldRef ID="c6115ba0-70f2-4396-9adb-775f970f6871" Name="test_Currency" DisplayName="test_Currency" />
+            <pnp:FieldRef ID="86070ddc-2333-4384-bd1a-228a3ee300b1" Name="test_CurrencyMinMax" DisplayName="test_CurrencyMinMax" />
+            <pnp:FieldRef ID="279a0798-0633-4860-891d-f96d895d8334" Name="test_DateAndTime" DisplayName="test_DateAndTime" />
+            <pnp:FieldRef ID="fa0940fb-28fa-4da6-8cd7-4d5a52e508c4" Name="test_DateDefault" DisplayName="test_DateDefault" />
+            <pnp:FieldRef ID="5f1fadbd-4abf-4636-a6b7-c7d5018ea917" Name="test_DateOnly" DisplayName="test_DateOnly" />
+            <pnp:FieldRef ID="f6d3dc0b-3421-4df8-908a-1f26ceb7e5d9" Name="test_FullHTML" DisplayName="test_FullHTML" />
+            <pnp:FieldRef ID="b62105eb-135c-4659-bf66-f8db43b8ddcf" Name="test_Hyperlink" DisplayName="test_Hyperlink" />
+            <pnp:FieldRef ID="84f3ede1-a76a-436a-8763-2278382915e0" Name="test_HyperlinkWithFormatting" DisplayName="test_HyperlinkWithFormatting" />
+            <pnp:FieldRef ID="ae0464c2-f1ff-400a-a410-3ba61a192021" Name="test_ImageWithFormatting" DisplayName="test_ImageWithFormatting" />
+            <pnp:FieldRef ID="152b2f20-cf49-4ee4-bac2-3cfb0568b5b4" Name="test_LookupIdMulti" DisplayName="test_LookupIdMulti" />
+            <pnp:FieldRef ID="787a5251-265c-4d6b-b896-790d2c91cec8" Name="test_LookupTitleSingle" DisplayName="test_LookupTitleSingle" />
+            <pnp:FieldRef ID="0fa1479e-27d7-448c-85ee-475e755d18ae" Name="test_ManagedEmptyRequired" DisplayName="test_ManagedEmptyRequired" />
+            <pnp:FieldRef ID="387ac4cb-7e6f-4737-8fbe-196223a678e9" Name="test_ManagedMultiBadChar" DisplayName="test_ManagedMultiBadChar" />
+            <pnp:FieldRef ID="42bbecab-34fa-4497-b1b1-edef8799ef00" Name="test_ManagedSingle" DisplayName="test_ManagedSingle" />
+            <pnp:FieldRef ID="aea0b641-76b4-4e8e-b737-98e5e27addcd" Name="test_ManagedSingleEmpty" DisplayName="test_ManagedSingleEmpty" />
+            <pnp:FieldRef ID="72d9aa18-f59b-453e-a1a3-cbf22dff7eaf" Name="test_ManagedSingleSubSet" DisplayName="test_ManagedSingleSubSet" />
+            <pnp:FieldRef ID="fc358572-15a3-4d3d-8054-6e610c03294a" Name="test_MultipleLinesOfTextPlain" DisplayName="test_MultipleLinesOfTextPlain" />
+            <pnp:FieldRef ID="bc83b20c-ac7e-4874-bd4f-5081c96ae78e" Name="test_MultipleLinesOfTextRich" DisplayName="test_MultipleLinesOfTextRich" />
+            <pnp:FieldRef ID="9ba0a405-d8d2-4bc5-a309-5a1ab14c12f8" Name="test_Number" DisplayName="test_Number" />
+            <pnp:FieldRef ID="36f7f848-e5b6-4856-8954-93a7ad3270ee" Name="test_Number5DecimalPlace" DisplayName="test_Number5DecimalPlace" />
+            <pnp:FieldRef ID="ee813f07-fade-4b1d-aeaf-2b14c5a2190f" Name="test_NumberMinMax" DisplayName="test_NumberMinMax" />
+            <pnp:FieldRef ID="ddfdbc82-b618-4c84-b56c-ab4313ad530c" Name="test_PersonMembersGroupSingle" DisplayName="test_PersonMembersGroupSingle" />
+            <pnp:FieldRef ID="4eaed503-ae87-40d6-903a-568da0f588e0" Name="test_PersonMulti" DisplayName="test_PersonMulti" />
+            <pnp:FieldRef ID="e9d65197-88c4-4737-9bc7-07fa4b1fbf95" Name="test_PersonOrGroupSingle" DisplayName="test_PersonOrGroupSingle" />
+            <pnp:FieldRef ID="61c631f5-2fa0-41c7-802b-e99228f345ae" Name="test_Picture" DisplayName="test_Picture" />
+            <pnp:FieldRef ID="22c2eed7-6926-42b5-ba98-b6767cd85551" Name="test_RichMediaData" DisplayName="test_RichMediaData" />
+            <pnp:FieldRef ID="e64c2890-098d-4e38-b39f-dccb1589f42b" Name="test_SingleLineOfText" DisplayName="test_SingleLineOfText" />
+            <pnp:FieldRef ID="9ae065f4-06e6-4c49-a501-7b6b75ea3673" Name="test_SingleLineOfText5CharLimit" DisplayName="test_SingleLineOfText5CharLimit" />
+            <pnp:FieldRef ID="88c7d49a-5a9d-48f2-a065-f36b3594e876" Name="test_SummaryLinksData" DisplayName="test_SummaryLinksData" />
+            <pnp:FieldRef ID="34d95bb3-387d-4bb4-8170-b13c7ddc2e72" Name="test_TaskOutcome" DisplayName="test_TaskOutcome" />
+            <pnp:FieldRef ID="1cd988b6-4deb-4310-bae6-78eee1673db8" Name="test_YesNo" DisplayName="test_YesNo" />
+            <pnp:FieldRef ID="7e4d8b89-cf34-42bb-b028-ef6444487d95" Name="test_Calculated" DisplayName="test_Calculated" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://canadacentral1.pushnp.svc.ms/notifications?token=9316bde2-b2d9-4494-982b-625b4fbf82b9" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="test_Events" Description="" DocumentTemplate="" TemplateType="106" Url="Lists/Events" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-ec85-4903-972d-ebe475780106" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Events/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Events/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Events/NewForm.aspx" ImageUrl="/_layouts/15/images/itevent.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0102" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0102001F03A69DDF3C7846B0FE2EC5E9A08CE1" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{B6ECE6EB-33EB-4BCB-8910-454EBE27AE28}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="CALENDAR" TabularView="FALSE" RecurrenceRowset="TRUE" DisplayName="Calendar" Url="{site}/Lists/Events/calendar.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" MobileUrl="_layouts/15/mobile/viewdaily.aspx" ImageUrl="/_layouts/15/images/events.png?rev=47">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Month />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="EventType" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="Description" />
+                <FieldRef Name="Workspace" />
+                <FieldRef Name="MasterSeriesItemID" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <ViewData>
+                <FieldRef Name="Title" Type="CalendarMonthTitle" />
+                <FieldRef Name="Title" Type="CalendarWeekTitle" />
+                <FieldRef Name="Location" Type="CalendarWeekLocation" />
+                <FieldRef Name="Title" Type="CalendarDayTitle" />
+                <FieldRef Name="Location" Type="CalendarDayLocation" />
+              </ViewData>
+            </View>
+            <View Name="{5E14389C-C9EE-42C0-BD54-FEA779717DC7}" MobileView="TRUE" Type="HTML" DisplayName="All Events" Url="{site}/Lists/Events/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{A0A5344C-1DCE-4909-AD0F-B44160970E47}" MobileView="TRUE" Type="HTML" RecurrenceRowset="TRUE" DisplayName="Current Events" Url="{site}/Lists/Events/MyItems.aspx" Level="1" BaseViewID="3" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=47">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Now />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="15d9c48f-af26-4779-a42b-d47e41845a78" Name="n2d9aa18f59b453ea1a3cbf22dff7eaf" Hidden="true" DisplayName="test_ManagedSingleSubSet_0" />
+            <pnp:FieldRef ID="645428a8-3755-40c3-b4d3-a3482376abda" Name="aea0b64176b44e8eb73798e5e27addcd" Hidden="true" DisplayName="test_ManagedSingleEmpty_0" />
+            <pnp:FieldRef ID="cdeacf43-2827-4909-8842-a46e9a0b2766" Name="k2bbecab34fa4497b1b1edef8799ef00" Hidden="true" DisplayName="test_ManagedSingle_0" />
+            <pnp:FieldRef ID="d6e3f9f5-8cfd-477f-b17f-bbf63fbaf228" Name="j87ac4cb7e6f47378fbe196223a678e9" Hidden="true" DisplayName="test_ManagedMultiBadChar_0" />
+            <pnp:FieldRef ID="ea045ddc-5744-41e6-8a8d-3722c27dbd84" Name="gfa1479e27d7448c85ee475e755d18ae" Hidden="true" DisplayName="test_ManagedEmptyRequired_0" />
+            <pnp:FieldRef ID="288f5f32-8462-4175-8f09-dd7ba29359a9" Name="Location" DisplayName="Location" />
+            <pnp:FieldRef ID="64cd368d-2f95-4bfc-a1f9-8d4324ecb007" Name="EventDate" Required="true" DisplayName="Start Time" />
+            <pnp:FieldRef ID="2684f9f2-54be-429f-ba06-76754fc056bf" Name="EndDate" Required="true" DisplayName="End Time" />
+            <pnp:FieldRef ID="9da97a8a-1da5-4a77-98d3-4bc10456e700" Name="Description" DisplayName="Description" />
+            <pnp:FieldRef ID="7d95d1f4-f5fd-4a70-90cd-b35abc9b5bc8" Name="fAllDayEvent" DisplayName="All Day Event" />
+            <pnp:FieldRef ID="f2e63656-135e-4f1c-8fc2-ccbe74071901" Name="fRecurrence" DisplayName="Recurrence" />
+            <pnp:FieldRef ID="6df9bd52-550e-4a30-bc31-a4366832a87d" Name="Category" DisplayName="Category" />
+            <pnp:FieldRef ID="55b29417-1042-47f0-9dff-ce8156667f96" Name="TaskOutcome" DisplayName="Task Outcome" />
+            <pnp:FieldRef ID="7970295b-efdf-4569-a0e2-138cd6fb8499" Name="test_ChoiceMulti" DisplayName="test_ChoiceMulti" />
+            <pnp:FieldRef ID="f94d08e6-2d05-4390-ade0-b9010771a7c9" Name="test_ChoiceSingle" DisplayName="test_ChoiceSingle" />
+            <pnp:FieldRef ID="c6115ba0-70f2-4396-9adb-775f970f6871" Name="test_Currency" DisplayName="test_Currency" />
+            <pnp:FieldRef ID="86070ddc-2333-4384-bd1a-228a3ee300b1" Name="test_CurrencyMinMax" DisplayName="test_CurrencyMinMax" />
+            <pnp:FieldRef ID="279a0798-0633-4860-891d-f96d895d8334" Name="test_DateAndTime" DisplayName="test_DateAndTime" />
+            <pnp:FieldRef ID="fa0940fb-28fa-4da6-8cd7-4d5a52e508c4" Name="test_DateDefault" DisplayName="test_DateDefault" />
+            <pnp:FieldRef ID="5f1fadbd-4abf-4636-a6b7-c7d5018ea917" Name="test_DateOnly" DisplayName="test_DateOnly" />
+            <pnp:FieldRef ID="f6d3dc0b-3421-4df8-908a-1f26ceb7e5d9" Name="test_FullHTML" DisplayName="test_FullHTML" />
+            <pnp:FieldRef ID="b62105eb-135c-4659-bf66-f8db43b8ddcf" Name="test_Hyperlink" DisplayName="test_Hyperlink" />
+            <pnp:FieldRef ID="84f3ede1-a76a-436a-8763-2278382915e0" Name="test_HyperlinkWithFormatting" DisplayName="test_HyperlinkWithFormatting" />
+            <pnp:FieldRef ID="ae0464c2-f1ff-400a-a410-3ba61a192021" Name="test_ImageWithFormatting" DisplayName="test_ImageWithFormatting" />
+            <pnp:FieldRef ID="152b2f20-cf49-4ee4-bac2-3cfb0568b5b4" Name="test_LookupIdMulti" DisplayName="test_LookupIdMulti" />
+            <pnp:FieldRef ID="787a5251-265c-4d6b-b896-790d2c91cec8" Name="test_LookupTitleSingle" DisplayName="test_LookupTitleSingle" />
+            <pnp:FieldRef ID="0fa1479e-27d7-448c-85ee-475e755d18ae" Name="test_ManagedEmptyRequired" DisplayName="test_ManagedEmptyRequired" />
+            <pnp:FieldRef ID="387ac4cb-7e6f-4737-8fbe-196223a678e9" Name="test_ManagedMultiBadChar" DisplayName="test_ManagedMultiBadChar" />
+            <pnp:FieldRef ID="42bbecab-34fa-4497-b1b1-edef8799ef00" Name="test_ManagedSingle" DisplayName="test_ManagedSingle" />
+            <pnp:FieldRef ID="aea0b641-76b4-4e8e-b737-98e5e27addcd" Name="test_ManagedSingleEmpty" DisplayName="test_ManagedSingleEmpty" />
+            <pnp:FieldRef ID="72d9aa18-f59b-453e-a1a3-cbf22dff7eaf" Name="test_ManagedSingleSubSet" DisplayName="test_ManagedSingleSubSet" />
+            <pnp:FieldRef ID="fc358572-15a3-4d3d-8054-6e610c03294a" Name="test_MultipleLinesOfTextPlain" DisplayName="test_MultipleLinesOfTextPlain" />
+            <pnp:FieldRef ID="bc83b20c-ac7e-4874-bd4f-5081c96ae78e" Name="test_MultipleLinesOfTextRich" DisplayName="test_MultipleLinesOfTextRich" />
+            <pnp:FieldRef ID="9ba0a405-d8d2-4bc5-a309-5a1ab14c12f8" Name="test_Number" DisplayName="test_Number" />
+            <pnp:FieldRef ID="36f7f848-e5b6-4856-8954-93a7ad3270ee" Name="test_Number5DecimalPlace" DisplayName="test_Number5DecimalPlace" />
+            <pnp:FieldRef ID="ee813f07-fade-4b1d-aeaf-2b14c5a2190f" Name="test_NumberMinMax" DisplayName="test_NumberMinMax" />
+            <pnp:FieldRef ID="ddfdbc82-b618-4c84-b56c-ab4313ad530c" Name="test_PersonMembersGroupSingle" DisplayName="test_PersonMembersGroupSingle" />
+            <pnp:FieldRef ID="4eaed503-ae87-40d6-903a-568da0f588e0" Name="test_PersonMulti" DisplayName="test_PersonMulti" />
+            <pnp:FieldRef ID="e9d65197-88c4-4737-9bc7-07fa4b1fbf95" Name="test_PersonOrGroupSingle" DisplayName="test_PersonOrGroupSingle" />
+            <pnp:FieldRef ID="61c631f5-2fa0-41c7-802b-e99228f345ae" Name="test_Picture" DisplayName="test_Picture" />
+            <pnp:FieldRef ID="22c2eed7-6926-42b5-ba98-b6767cd85551" Name="test_RichMediaData" DisplayName="test_RichMediaData" />
+            <pnp:FieldRef ID="e64c2890-098d-4e38-b39f-dccb1589f42b" Name="test_SingleLineOfText" DisplayName="test_SingleLineOfText" />
+            <pnp:FieldRef ID="9ae065f4-06e6-4c49-a501-7b6b75ea3673" Name="test_SingleLineOfText5CharLimit" DisplayName="test_SingleLineOfText5CharLimit" />
+            <pnp:FieldRef ID="88c7d49a-5a9d-48f2-a065-f36b3594e876" Name="test_SummaryLinksData" DisplayName="test_SummaryLinksData" />
+            <pnp:FieldRef ID="34d95bb3-387d-4bb4-8170-b13c7ddc2e72" Name="test_TaskOutcome" DisplayName="test_TaskOutcome" />
+            <pnp:FieldRef ID="1cd988b6-4deb-4310-bae6-78eee1673db8" Name="test_YesNo" DisplayName="test_YesNo" />
+            <pnp:FieldRef ID="7e4d8b89-cf34-42bb-b028-ef6444487d95" Name="test_Calculated" DisplayName="test_Calculated" />
+          </pnp:FieldRefs>
+          <pnp:FieldDefaults>
+            <pnp:FieldDefault FieldName="Category" />
+          </pnp:FieldDefaults>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="test_LookupTargetList" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/test_LookupTargetList" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/test_LookupTargetList/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/test_LookupTargetList/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/test_LookupTargetList/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{42C80E6D-D51E-465D-A4AD-4E5E97EC8A28}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/test_LookupTargetList/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://canadacentral1.pushnp.svc.ms/notifications?token=3e89c31c-30d8-46af-9423-b81569027ac6" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:TermGroups>
+        <pnp:TermGroup Name="ListPopulator" ID="fa4963de-8998-420c-b589-24c8441553c9" Description="" UpdateBehavior="Overwrite">
+          <pnp:TermSets>
+            <pnp:TermSet Name="TermSet ~!@#$%^＆*()_+]\['＂/.," ID="8a16faaf-dc05-4998-8e40-dca6eb59fe7b" Description="">
+              <pnp:Terms>
+                <pnp:Term Name="~!@#$%^＆*()_+]\['＂/.," ID="f5fe88db-c01d-4011-befd-3baa929e2530" Description="" SourceTermId="f5fe88db-c01d-4011-befd-3baa929e2530">
+                  <pnp:Terms />
+                </pnp:Term>
+              </pnp:Terms>
+            </pnp:TermSet>
+            <pnp:TermSet Name="TermSet A" ID="8758935c-9075-4889-b6cd-d72f4de2bb15" Description="">
+              <pnp:Terms>
+                <pnp:Term Name="TermSet A - A" ID="481b3a93-028d-4737-9e0d-e6190940ba02" Description="" SourceTermId="481b3a93-028d-4737-9e0d-e6190940ba02">
+                  <pnp:Terms />
+                </pnp:Term>
+                <pnp:Term Name="TermSet A - B" ID="d71d90c8-9243-4083-830c-3aaea838807f" Description="" SourceTermId="d71d90c8-9243-4083-830c-3aaea838807f">
+                  <pnp:Terms />
+                </pnp:Term>
+                <pnp:Term Name="TermSet A - C" ID="72730d53-6bc4-4d88-939c-86a882a8973d" Description="" SourceTermId="72730d53-6bc4-4d88-939c-86a882a8973d">
+                  <pnp:Terms>
+                    <pnp:Term Name="TermSet A - C - A" ID="880bf894-8f0c-45b9-92a9-248fad4f5590" Description="" SourceTermId="880bf894-8f0c-45b9-92a9-248fad4f5590">
+                      <pnp:Terms />
+                    </pnp:Term>
+                    <pnp:Term Name="TermSet A - C - B" ID="212e189a-8f14-4deb-ab5b-a62cbe987bbf" Description="" SourceTermId="212e189a-8f14-4deb-ab5b-a62cbe987bbf">
+                      <pnp:Terms />
+                    </pnp:Term>
+                  </pnp:Terms>
+                </pnp:Term>
+              </pnp:Terms>
+            </pnp:TermSet>
+            <pnp:TermSet Name="TermSet Empty" ID="7b52173b-100a-4067-a157-693fe93610b6" Description="" />
+          </pnp:TermSets>
+        </pnp:TermGroup>
+      </pnp:TermGroups>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

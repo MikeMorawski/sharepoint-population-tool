@@ -1,0 +1,72 @@
+/*@import '~office-ui-fabric-react/dist/sass/_References.scss';*/
+
+.PopulationPanel {
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.PopulationPanel .bp3-heading {
+    font-weight: 600;
+    font-size: 21px;
+    color: #323130;
+}
+
+.contentWrapper {
+    padding: 20px 10px;
+    overflow: auto;
+    min-height: calc(100vh - 28px);
+    display: flex;
+    flex-direction: column;
+}
+
+.panelMainContent {
+    flex: 1;
+}
+
+.sectionHeading {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 30px 0 10px 0;
+    margin: 0;
+}
+
+.multi {
+    width: 80%;
+    display: block;
+    margin-top: 10px;
+}
+
+.fieldInfoItem {
+    border-left: 2px solid #323130;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.noFieldSupport {
+    font-size: 12px;
+    padding-left: 5px;
+    color: darkred;
+}
+
+.noFieldsMessage {
+    margin-top: 20px;
+    color: #444;
+    font-style: italic;
+}
+
+.ctNameLabel {
+    margin: 15px 0 0 0;
+    font-weight: 600;
+}
+
+.fieldList {
+    margin-top: 5px;
+}
+
+.contextCalloutWarning {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.footer {
+    padding-top:13px;
+}
