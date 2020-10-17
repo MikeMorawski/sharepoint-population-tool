@@ -5,6 +5,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Getting up and running in Chrome
 
 ```
+cd .\src\popup
+npm install
+cd ..\..\
+npm install
 npm run clean
 npm run watch
 ```
