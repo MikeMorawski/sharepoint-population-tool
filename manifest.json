@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "SharePoint Population Tool",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "permissions": [
         "activeTab"
     ],
